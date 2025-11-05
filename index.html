@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Llama Apps</title>
 <style>
   body {
@@ -12,44 +11,34 @@
     text-align: center;
     padding: 60px 20px;
   }
-  h1 {
-    font-size: 2.6rem;
-    margin-bottom: 0.5rem;
-  }
-  p {
-    color: #555;
-    font-size: 1.1rem;
-    margin-bottom: 2.5rem;
-  }
+  h1 { font-size: 2.5rem; margin-bottom: 0.3rem; }
+  p { color: #666; font-size: 1.1rem; margin-bottom: 2.5rem; }
   .app-card {
     display: inline-block;
     background: white;
     padding: 20px 30px;
     border-radius: 20px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     margin: 15px;
-    transition: transform 0.2s ease;
+    width: 240px;
   }
-  .app-card:hover {
-    transform: translateY(-3px);
+  img {
+    width: 96px;
+    height: 96px;
+    border-radius: 20px;
   }
-  .app-name {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
+  .app-name { font-size: 1.3rem; font-weight: 600; margin-top: 15px; }
   .download-btn {
+    display: inline-block;
     background: #007aff;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 12px;
     font-weight: 500;
-    transition: background 0.2s;
+    margin-top: 10px;
   }
-  .download-btn:hover {
-    background: #005ecb;
-  }
+  .download-btn:hover { background: #005ecb; }
 </style>
 </head>
 <body>
@@ -58,18 +47,15 @@
   <p>Download the latest versions of my macOS apps below</p>
 
   <div class="app-card">
-    <div class="app-name">Llama Installer</div>
-    <a href="LlamaInstaller.dmg" class="download-btn">Download</a>
-  </div>
-
-  <div class="app-card">
+    <img src="llama-typer/icon.png" alt="Llama Typer Icon">
     <div class="app-name">Llama Typer</div>
-    <a href="LlamaTyper.dmg" class="download-btn">Download</a>
+    <a href="llama-typer/LlamaTyper.dmg" class="download-btn">Download</a>
   </div>
 
   <div class="app-card">
-    <div class="app-name">Llama Tools</div>
-    <a href="LlamaTools.dmg" class="download-btn">Download</a>
+    <img src="llama-installer/icon.png" alt="Llama Installer Icon">
+    <div class="app-name">Llama Installer</div>
+    <a href="llama-installer/LlamaInstaller.dmg" class="download-btn">Download</a>
   </div>
 
 </body>
