@@ -1,47 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Llama Apps</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="llama-typer/icon.png" type="image/png">
+  <link rel="icon" href="llama-typer/icon.png" />
+  <link rel="preload" as="image" href="llama-typer/icon.png">
+  <link rel="preload" as="image" href="ocrly/icon.png">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <img src="llama-typer/icon.png" alt="Llama Logo" class="logo">
-      <div>
+  <!-- ambient gradient blobs -->
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+
+  <header class="nav">
+    <div class="brand">
+      <img class="logo" src="llama-typer/icon.png" alt="Llama logo">
+      <div class="titles">
         <h1>Llama Apps</h1>
-        <p>Elegant macOS tools — crafted for simplicity.</p>
+        <p class="subtitle">Tiny, elegant macOS utilities.</p>
       </div>
     </div>
+    <nav class="links">
+      <a href="#apps">Apps</a>
+      <a href="https://github.com/TheLlamainator" target="_blank" rel="noopener">GitHub</a>
+    </nav>
   </header>
 
-  <main class="grid">
-
-    <div class="app-card">
-      <img src="llama-typer/icon.png" alt="Llama Typer Icon" class="app-icon">
-      <div class="app-info">
-        <h2>Llama Typer</h2>
-        <p>A smart, human-like auto-typer for macOS. Built for precision and flow.</p>
-        <a href="llama-typer/LlamaTyper.dmg" class="download-btn">Download for macOS</a>
+  <main>
+    <section class="hero">
+      <h2>Your lightweight toolbox for macOS</h2>
+      <p class="hero-sub">
+        Hand-crafted utilities with native look & feel. No cruft. Just flow.
+      </p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#apps">Browse apps</a>
       </div>
-    </div>
+    </section>
 
-    <div class="app-card">
-      <img src="ocrly/icon.png" alt="OCRly Icon" class="app-icon">
-      <div class="app-info">
-        <h2>OCRly</h2>
-        <p>Instantly extract text from any image or screenshot — fast and seamless.</p>
-        <a href="ocrly/OCRly.dmg" class="download-btn">Download for macOS</a>
-      </div>
-    </div>
+    <section id="apps" class="grid">
+      <!-- Llama Typer -->
+      <article class="card">
+        <div class="card-top">
+          <img class="app-icon" src="llama-typer/icon.png" alt="Llama Typer icon">
+          <div>
+            <h3>Llama Typer</h3>
+            <p class="tagline">Human-like auto-typing with natural pauses and corrections.</p>
+          </div>
+        </div>
 
+        <ul class="meta">
+          <li><span class="chip">Universal</span></li>
+          <li><span class="chip">macOS 12+</span></li>
+          <li><span class="chip">DMG</span></li>
+        </ul>
+
+        <div class="actions">
+          <a class="btn ghost" href="llama-typer/LlamaTyper.dmg">Download</a>
+          <a class="btn subtle" href="https://github.com/TheLlamainator/llamaupdates/tree/main/llama-typer" target="_blank" rel="noopener">Folder</a>
+        </div>
+      </article>
+
+      <!-- OCRly -->
+      <article class="card">
+        <div class="card-top">
+          <img class="app-icon" src="ocrly/icon.png" alt="OCRly icon">
+          <div>
+            <h3>OCRly</h3>
+            <p class="tagline">One-click OCR from screenshots & images. Copy text instantly.</p>
+          </div>
+        </div>
+
+        <ul class="meta">
+          <li><span class="chip">Universal</span></li>
+          <li><span class="chip">macOS 12+</span></li>
+          <li><span class="chip">DMG</span></li>
+        </ul>
+
+        <div class="actions">
+          <a class="btn ghost" href="ocrly/OCRly.dmg">Download</a>
+          <a class="btn subtle" href="https://github.com/TheLlamainator/llamaupdates/tree/main/ocrly" target="_blank" rel="noopener">Folder</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="note">
+      <p>First run on unsigned apps: <strong>Right-click → Open</strong> (macOS will remember).</p>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Llama Apps — Designed and built on macOS. 🦙</p>
+    <p>© 2025 Llama Apps • Built on macOS • <a href="https://github.com/TheLlamainator">GitHub</a></p>
   </footer>
 </body>
 </html>
